@@ -10,7 +10,8 @@ public class Contact {
     public  ArrayList<Coordonnee> lesCoordonnees;
 
     public Contact(String lastname, String firstname) {
-        this.nom = lastname;
+        this.nom = lastname; /*en créant un nouvelle objet je devrais mettre lastname et
+        firstname en parametre du construct; lastname vas être affecté au nom de l'objet c'est a dire (this) cela va permettre la généricitée*/
         this.prenom = firstname;
         this.lesCoordonnees = new ArrayList<Coordonnee>();
     }
